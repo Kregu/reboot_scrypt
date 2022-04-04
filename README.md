@@ -4,5 +4,5 @@ reboot_scrypt отправляет команду на перезагрузку.
 
 S99start_scrypt запускает reboot_scrypt после того как устройство ответит на ping.
 
-Помещаем в папаку /opt/etc/init.d/
+Помещаем в папку /opt/etc/init.d/
 Для работы скрипта необходимо установть пакет expect (opkg install expect).
