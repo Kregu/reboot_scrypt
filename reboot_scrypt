@@ -1,0 +1,8 @@
+#!/opt/bin/expect
+
+spawn telnet 192.168.1.10
+expect ogin {send admin\r}
+expect assword {send 12345678\r}
+expect g)> {send "system reboot\r"}
+expect ystem
+

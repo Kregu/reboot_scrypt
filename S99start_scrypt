@@ -1,0 +1,22 @@
+#!/bin/sh
+
+start()
+{
+while [ true ]; do
+    ping -q -c 10 192.168.1.10
+
+    if [ $? == 0 ]; then
+        /opt/etc/init.d/reboot_scrypt
+        break
+    fi
+
+    sleep 5
+done
+}
+
+case "$1" in
+        start)                 
+            start
+            ;;          
+esac
+
